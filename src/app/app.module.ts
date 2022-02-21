@@ -18,6 +18,8 @@ import { LoginComponent } from './login/login.component';
 
 
 
+
+
 //bootstrap
 
 
@@ -30,7 +32,7 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent,
+    LoginComponent
     
   ],
   imports: [
