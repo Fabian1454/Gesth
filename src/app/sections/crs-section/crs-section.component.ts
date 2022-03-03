@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import noUiSlider from "nouislider";
+import noUiSlider from "noUislider";
 
 @Component({
   selector: 'app-crs-section',
