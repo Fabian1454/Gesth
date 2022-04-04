@@ -1,0 +1,186 @@
+$color: #232323;
+.wrap{
+    padding:2.5em;
+    text-align:center;
+    }
+    
+    .button{
+    display:inline-block;             
+    letter-spacing:-1px;
+    text-transform:uppercase;
+    text-decoration:none;        
+    transition:all 0.3s linear;
+    animation-iteration-count: infinite;
+    
+    &:hover{
+      color:#ffffff;
+      background:$color;
+      animation:none;
+    }
+    }
+    
+    .button3{
+     animation-duration: 1.5s;
+     animation-name: shrink;
+    }
+    
+    @keyframes pulse {
+    0% {
+      opacity:1;
+    }
+    
+    50% {
+      opacity:0.5;
+      box-shadow:0px 0px 5px 0px $color;
+    }
+    
+    100%{
+      opacity:1;
+      box-shadow:none;
+    }
+    }
+    
+    @keyframes shaker {
+    0% {
+      transform:rotate(0deg);
+    }
+    
+    29% {
+      transform:rotate(0deg);
+    }
+    
+    
+    30% {
+      transform:rotate(1deg);
+    }
+    
+    31% {
+      transform:rotate(2deg);
+    }
+    
+    33% {
+      transform:rotate(1deg);
+    }
+    
+    35% {
+      transform:rotate(0deg);
+    }
+    
+    37% {
+      transform:rotate(-1deg);
+    }
+    
+    39% {
+      transform:rotate(-2deg);
+    }
+    
+    41% {
+      transform:rotate(-1deg);
+    }
+    
+    43% {
+      transform:rotate(0deg);
+    }
+    
+    
+    45% {
+      transform:rotate(1deg);
+    }
+    
+    47% {
+      transform:rotate(2deg);
+    }
+    
+    49% {
+      transform:rotate(1deg);
+    }
+    
+    51% {
+      transform:rotate(0deg);
+    }
+    
+    53% {
+      transform:rotate(-1deg);
+    }
+    
+    55% {
+      transform:rotate(-2deg);
+    }
+    
+    57% {
+      transform:rotate(-1deg);
+    }
+    
+    59% {
+      transform:rotate(0deg);
+    }
+    
+    
+    100%{
+      transform:rotate(0deg);
+    }
+    }
+    
+    @keyframes shrink {
+    0% {
+      transform: scaleY(1);
+    }
+    
+    49% {
+      transform: scale(0.97, 0.97);
+    }
+    
+    100% {
+      transform: scaleY(1);
+    }
+    
+    }
+    
+    @keyframes jump {
+    0% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+    
+    30%{
+      transform: scale(1,0.8) translate(0px, 10px); 
+    }
+    
+    75%{
+      transform: scale(1,1.1) translate(0px, -25px); 
+    }
+    
+    100% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+    
+    }
+    
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+    .button{
+      display:inline-block;
+      font-size:1em;
+      padding:1.2em 1.5em;   
+      font-weight:500;
+      letter-spacing:-1px;
+      text-transform:uppercase;
+      text-decoration:none;
+      margin:3em;  
+      color:$color;
+      border-radius:0.4em;
+      transition:all 0.3s linear;
+      animation-iteration-count: infinite;
+      margin: 0 auto;
+      
+      &:hover{
+        color:#ffffff;
+        background:$color;
+        animation:none;
+      }
+    }
+    
+    .button3{
+       animation-duration: 1.5s;
+       animation-name: shrink;
+    }
+    }

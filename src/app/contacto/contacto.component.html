@@ -1,0 +1,182 @@
+<main class="profile-page">
+    <section class="section-profile-cover section-shaped my-0">
+      <!-- Circles background -->
+      <div class="shape shape-style-1 bg-gradient-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="card card-profile shadow mt--300">
+          <div class="px-4">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/img/theme/contact.jpeg" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
+                <div class="card-profile-actions py-4 mt-lg-0">
+                  <a href="javascript:void(0)" class="btn btn-sm btn-info mr-4">Llámanos</a>
+                  <a href="javascript:void(0)" class="btn btn-sm btn-default float-right">Formulario</a>
+                </div>
+              </div>
+              <div class="col-lg-4 order-lg-1">
+                <div class="card-profile-stats d-flex justify-content-center">
+                  <div>
+                    <span class="heading">+200</span>
+                    <span class="description">Clientes</span>
+                  </div>
+                  <div>
+                    <span class="heading">+1300</span>
+                    <span class="description">Candidatos</span>
+                  </div>
+                  <div>
+                    <span class="heading">15</span>
+                    <span class="description">Puntos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <h3>WOKPLACE              
+              </h3>
+              <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Visítanos y hablemos sobre el incremento en la rentabilidad de tu negocio</div>
+              <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Carrera 20B #77-05, Bogotá DC</div>
+              <i class="bi bi-geo-alt-fill"></i>
+              <button style="border-color: transparent; background: transparent;" (click)="open(classic4, 'Notification', '')">Ver mapa</button>              
+              <ng-template #classic4 let-c="close" let-d="dismiss">
+                <div class="modal-content bg-gradient-danger">                
+                  <div class="modal-body">
+                    <div class="py-3 text-center">
+                      <i class="bi bi-geo-alt-fill ni-3x"></i>
+                      <h4 class="heading mt-7">¡Estamos ubicados aquí!</h4>
+                      <p>Nuestras oficinas están ubicadas frente al monumento de Héroes, cerca a la estación TM Calle 76</p>
+                      <iframe class="text-center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.385985783327!2d-74.0613377!3d4.6658069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5fb5b78ecd78ed8!2sGesth%20S.A.S!5e0!3m2!1ses-419!2sco!4v1648574425978!5m2!1ses-419!2sco" width="400" height="300" style="border:0; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="mt-5 py-5 border-top text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-9">
+                  <p>Déjanos saber las necesidades de tu servicio, para una propuesta comercial más ajustada.</p>
+                  <i class="bi bi-chat-left-text-fill"></i>
+                  <button style="border-color: transparent; background: transparent;" (click)="open(classic3, 'Notification', '')">Enviar mensaje</button>                            
+                  <div class="col-md-4">           
+                    <ng-template #classic3 let-c="close" let-d="dismiss">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="card bg-secondary shadow border-0">
+                            <div class="card-header bg-white">
+                              <div class="text-center text-muted mb-4">
+                                <h4 class="mb-1">¿Quieres trabajar con nosotros?</h4>
+                                <p class="mt-0">Tu proyecto es muy importante para nosotros</p>
+                              </div>
+                            </div>
+                            <div class="card-body px-lg-5 py-lg-5">                        
+                              <form role="form">
+                                <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                                  <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-user-run"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Escribe tu nombre" type="text" (focus)="focus=true" (blur)="focus=false">
+                                  </div>
+                                </div>
+                                <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                                  <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Email" type="email" (focus)="focus1=true" (blur)="focus1=false">
+                                  </div>
+                                </div>
+                                <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                                  <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Describenos tu solicitud..."></textarea>
+                                </div>                          
+                                <div class="text-center">
+                                  <button type="button" class="btn btn-default btn-round btn-block btn-lg">Enviar mensaje</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="https://www.linkedin.com/company/ok-empleos/" target="_blank">
+                  <button style="background-color: #0e76a8;" class="btn btn-block btn-primary mb-3 button button3">
+                   Linkedin
+                   <span class="btn-inner--icon" style="font-size: 1.3rem;"><i class="bi bi-linkedin"></i></span>
+                  </button>
+                </a>              
+                </div>          
+                <div class="col-md-4">
+                  <button style="background-color: #00bb2d; color: #ffffff;" class="btn btn-block mb-3 mb-sm-0 button button3" (click)="open(classic2, 'Notification', '')">
+                    Whatsapp
+                    <span class="btn-inner--icon" style="font-size: 1.3rem;"><i class="bi bi-whatsapp"></i></span>
+                  </button>          
+                  <ng-template #classic2 let-c="close" let-d="dismiss">
+                    <div class="modal-content bg-gradient-danger">
+                      <div class="modal-header">
+                        <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="py-3 text-center">
+                          <i class="ni ni-bell-55 ni-3x"></i>
+                          <h4 class="heading mt-4">¡Deberías leer esto!</h4>
+                          <p>Serás redireccionado con un asesor especializado, el cual te ayudara con todas tus preguntas.</p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://wa.link/n32gaz" target="_blank">
+                        <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                      </a>
+                        <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                      </div>
+                    </div>
+                  </ng-template>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/ok.empleos/?hl=es" target="_blank">
+                  <button style="border-color: inherit; background-image: linear-gradient(to bottom right, #f9ed32, #ee2a7b); color: #ffffff;" class="btn btn-block mb-3 button button3">
+                     Instagram
+                     <span class="btn-inner--icon" style="font-size: 1.3rem;"><i class="bi bi-instagram"></i></span>
+                  </button>
+                </a>       
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+  </main>

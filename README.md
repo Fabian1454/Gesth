@@ -1,2 +1,2 @@
 # Gesth
-Desarrollo experimental Gesth
+Desarrollo Gesth

@@ -1,0 +1,85 @@
+	/* CSS Multiple Whatsapp Chat */
+    #whatsapp-chat{position:fixed;background:#fff;width:350px;border-radius:10px;box-shadow:0 1px 15px rgba(32,33,36,.28);bottom:90px;right:30px;overflow:hidden;z-index:99;animation-name:showchat;animation-duration:1s;transform:scale(1)}
+    a.sundakushow-chat{position:fixed;z-index:98;bottom:25px;right:1px;font-size:15px; border-radius:30px;}
+
+
+    ul.abanico {
+        position: relative;
+        width: 500px;
+        margin: 50px auto;
+        height: 120px;
+        overflow: hidden;
+        list-style: none;
+        font: normal 12px "arial narrow", sans-serif;
+      }
+      ul.abanico li {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 88px;
+        height: 300px;
+        margin-left: -44px;
+        line-height: 300px;
+        text-align: center;
+        box-sizing: border-box;
+        -moz-transform-origin: top center;
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        -moz-transition: all .6s ;
+        -webkit-transition: all .6s ;
+        transition: all .6s ;
+      }
+      ul.abanico li a {
+        display: inline-block;
+        width: 100%;
+        height: 48px;
+        text-decoration: none;
+        background: #00bb2d;
+        color: white;
+        line-height: 40px;
+        vertical-align: bottom;
+        border: 3px solid #ddd;
+        border-radius: 20px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -moz-transition: all .6s ;
+        -webkit-transition: all .6s ;
+        transition: all .6s ;
+      }  
+      ul.abanico:hover li a {
+        background: purple;
+      }
+      ul.abanico:hover li {
+        opacity: 1;
+      }
+      ul.abanico:hover li:nth-of-type(6) {
+        opacity: 0;
+      }
+      ul.abanico:hover li:nth-of-type(1)  {
+        -moz-transform: rotate(36deg);
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+      }
+      ul.abanico:hover li:nth-of-type(2)  {
+        -moz-transform: rotate(18deg);
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+      }
+      ul.abanico:hover li:nth-of-type(3)  {
+        -moz-transform: rotate(-18deg);
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+      }
+      ul.abanico:hover li:nth-of-type(4)  {
+        -moz-transform: rotate(-36deg);
+        -webkit-transform: rotate(-36deg);
+        transform: rotate(-36deg);
+      }
+      ul.abanico:hover li:nth-of-type(5)  {
+        z-index: 1;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      

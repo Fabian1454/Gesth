@@ -7,16 +7,16 @@ import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
-import { LandingComponent } from './landing/landing.component';
-import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
+import { OutsourcingComponent } from './outsourcing/outsourcing.component';
 
-
+import { ContactoComponent } from './contacto/contacto.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 
 
@@ -27,14 +27,14 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    LandingComponent,
-    ProfileComponent,
+    SignupComponent,    
     NavbarComponent,
     FooterComponent,
-    LoginComponent
-    
-  ],
+    LoginComponent,
+    OutsourcingComponent,
+    ContactoComponent,
+    EventosComponent
+    ],
   imports: [
     BrowserModule,
     NgbModule,
@@ -43,7 +43,9 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     HomeModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
