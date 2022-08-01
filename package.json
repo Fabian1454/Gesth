@@ -1,5 +1,5 @@
 {
-  "name": "argon-design-system-angular",
+  "name": "gesth",
   "version": "1.2.0",
   "scripts": {
     "ng": "ng",
@@ -28,10 +28,12 @@
     "bootstrap-icons": "^1.8.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "mat-video": "^2.8.1",
+    "mdb-angular-ui-kit": "^2.3.0",
     "moment": "^2.29.1",
     "ng2-nouislider": "1.8.2",
     "nouislider": "14.6.3",
     "popper.js": "1.16.1",
+    "promise-mysql": "^3.3.1",
     "rxjs": "6.6.3",
     "rxjs-compat": "6.6.3",
     "zone.js": "0.11.3"

@@ -128,7 +128,7 @@
       }
     }
   },
-  "defaultProject": "argon-design-system-angular",
+  "defaultProject": "gesth",
   "cli": {
     "analytics": false
   }

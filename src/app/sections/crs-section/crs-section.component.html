@@ -115,10 +115,115 @@
       </div>         
     </div>
     <div class="btn-wrapper mt-5 row align-items-center justify-content-center mb-5">
-      <a href="https://okempleos.com/eventos/" target="_blank" class="btn btn-lg btn-danger btn-icon mb-3 mb-sm-0">
+      <a style="text-decoration: none; color: white;" (click)="open(classic2, 'Notification', '')" class="btn btn-lg btn-danger btn-icon mb-3 mb-sm-0">
         <span class="btn-inner--icon"><i class="ni"></i></span>
         <span class="btn-inner--text">VER PRÓXIMAS FERIAS</span>
-      </a>                
+      </a>  
+      
+      <div>         
+        <ng-template #classic2 let-c="close" let-d="dismiss">
+          <ul>                  
+            <li>    
+              <div class="date">
+                <h3>Abril<br><span>7</span></h3>
+              </div>
+              <a (click)="open(classic3, 'Notification', '')">
+                <p>Habilidades blandas, el mejor indicador para la selección de talento humano.</p>
+              </a>
+
+              <ng-template #classic3 let-c="close" let-d="dismiss">
+                <div style="width: 700px;" class="modal-content bg-gradient-danger">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-notification">Habilidades blandas, el mejor indicador para la selección de talento humano</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="py-3 text-center">
+                      <i class="bi bi-youtube ni-3x"></i>
+                      <h4 class="heading mt-4">¡No te pierdas esta y muchas más charlas!</h4>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/pneLydF2YhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://www.youtube.com/channel/UCbTDJAWM-3H-aZr-7F_6aBA" target="_blank">
+                    <button type="button" class="btn btn-white">¡Abrir Canal!</button>
+                  </a>
+                    <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+            <li>    
+              <div class="date">
+                <h3>Marzo<br><span>24</span></h3>
+              </div>
+              <a (click)="open(classic4, 'Notification', '')">
+                <p>Optimización digital para las compañías.</p>
+              </a>
+              <ng-template #classic4 let-c="close" let-d="dismiss">
+                <div style="width: 700px;" class="modal-content bg-gradient-danger">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-notification">Optimización digital para las compañías.</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="py-3 text-center">
+                      <i class="bi bi-youtube ni-3x"></i>
+                      <h4 class="heading mt-4">¡No te pierdas esta y muchas más charlas!</h4>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fyX-ZfbG1lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://www.youtube.com/channel/UCbTDJAWM-3H-aZr-7F_6aBA" target="_blank">
+                    <button type="button" class="btn btn-white">¡Abrir Canal!</button>
+                  </a>
+                    <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+            <li>    
+              <div class="date">
+                <h3>Marzo<br><span>10</span></h3>
+              </div>
+              <a (click)="open(classic5, 'Notification', '')">
+                <p>Hábitos Saludables de vida desde la oficina.</p>
+              </a>
+              <ng-template #classic5 let-c="close" let-d="dismiss">
+                <div style="width: 700px;" class="modal-content bg-gradient-danger">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-notification">Hábitos Saludables de vida desde la oficina.</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="py-3 text-center">
+                      <i class="bi bi-youtube ni-3x"></i>
+                      <h4 class="heading mt-4">¡No te pierdas esta y muchas más charlas!</h4>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UHjUk6xnvuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://www.youtube.com/channel/UCbTDJAWM-3H-aZr-7F_6aBA" target="_blank">
+                    <button type="button" class="btn btn-white">¡Abrir Canal!</button>
+                  </a>
+                    <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                  </div>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+        </ng-template>
+      </div>
+      
+
+
+
     </div>  
     <div class="text-center">      
       <p class="lead text-muted">Recuerda publicar o actualizar tus vacantes en <span><a href="https://okempleos.com/" target="_blank">www.okempleos.com</a></span></p>   

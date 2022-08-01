@@ -1,0 +1,497 @@
+<main>
+    <section class="section-profile-cover section-shaped my-0">
+      <div class="shape shape-style-1 bg-gradient-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container shape-container d-flex align-items-center py-lg">
+        <div class="col px-0">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-12 text-center">    
+              <p class="text-white ocultar">Encuentra trabajos, crea curriculums y enriquece tu hoja de vida</p>                        
+              <h3 class="text-white mb-4 font-size-title"><span style="font-size: 50px; font-weight: 400; line-height: 50px;">LA FORMA MÁS FÁCIL DE CONSEGUIR <BR> TU NUEVO TRABAJO</span></h3>
+              
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </section>
+  <!-- all jobs end DANIEL DIAZ-->
+  <section class="feature-cat-area pt-100" id="category">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="menu-content pb-60 col-lg-10">
+          <div class="title text-center">
+            <h1 class="mb-10">Categorías de trabajo destacadas</h1>
+            <p>Te ayudamos a encontrar el empleo ideal para ti de forma rápida</p>
+          </div>
+        </div>
+      </div>						
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="#" class="inactiveLink">
+              <img src="./assets/img/theme/o1.png" alt="">
+            </a>
+            <p>Comercial</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="category.html" class="inactiveLink">
+              <img src="./assets/img/theme/o2.png" alt="">
+            </a>
+            <p>Control Interno</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="category.html" class="inactiveLink">
+              <img src="./assets/img/theme/o3.png" alt="">
+            </a>
+            <p>Tecnología</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="category.html" class="inactiveLink">
+              <img src="./assets/img/theme/o4.png" alt="">
+            </a>
+            <p>Ventas</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="category.html" class="inactiveLink">
+              <img src="./assets/img/theme/o5.png" alt="">
+            </a>
+            <p>Logística</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="single-fcat">
+            <a href="category.html" class="inactiveLink">
+              <img src="./assets/img/theme/o6.png" alt="">
+            </a>
+            <p>Administrativa</p>
+          </div>			
+        </div>																											
+      </div>
+    </div>	
+  </section>
+      <!-- Start post Area -->
+    <section class="post-area section-gap">
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <div class="col-lg-8 post-list">
+          
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img class="izquierda" src="./assets/img/theme/logo_vacantess.png" alt="">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="inactiveLink">Estudiantes</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Técnicos</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Tecnologos</a>					
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="single.html" class="inactiveLink"><h4>Técnico en instalaciones</h4></a>
+                    <h6>Gestión Estratégica del Talento Humano</h6>					
+                  </div>
+  
+                  <button  class="btn aplicar" (click)="open(classic2, 'Notification', '')">
+                    Aplicar                  
+                  </button>                                             
+                  <div>         
+                    <ng-template #classic2 let-c="close" let-d="dismiss">
+                      <div class="modal-content bg-gradient-danger">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="py-3 text-center">
+                            <i class="ni ni-bell-55 ni-3x"></i>
+                            <h4 class="heading mt-4">Técnico en instalaciones</h4>
+                            <p>Serás redireccionado a nuestro portal de empleos, es necesario que te registres para aplicar a esta y muchas más vacantes.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://okempleos.com/vacantes/?vacanteId=1480-tecnico-en-instalaciones" target="_blank">
+                          <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                        </a>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+                <p>
+                  Importante empresa dedicada a brindar soluciones integrales de seguridad eléctrica se encuentra en búsqueda de  Técnico en instalaciones, 
+                  conocimiento y experiencia mínima de 1 año en CCTV, electricidad e instalaciones, cableado, fibra óptica, conocimiento en sistemas (word, excel,)
+                  DISPONIBILIDAD PARA VIAJAR A NIVEL NACIONAL Y TRABAJO NOCTURNO Contrato Obra o labor con posibilidad de pasar a indefinido  
+                  Con vehículo para transportarse a nivel Bogotá y Cundinamarca Horario: Lunes a sábado Salario mínimo + prestaciones de ley + rodamiento + recargos que apliquen
+                  La empresa asume todos los costos por viáticos.
+                </p>
+                <h5>Tipo de jornada: Tiempo Completo</h5>
+                <p class="address"><span class="bi bi-geo-alt"></span> Cra. 20B# 77-05 - Chapinero</p>
+                <p class="address"><span class="bi bi-stack"></span>$1.000.000 a $1.500.000</p>
+              </div>
+            </div>
+  
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img class="izquierda" src="./assets/img/theme/logo_vacantess.png" alt="">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="inactiveLink">Administrativa</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Profesionales</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Tecnologos</a>					
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="single.html" class="inactiveLink"><h4>Ejecutivo comercial</h4></a>
+                    <h6>Gestión Estratégica del Talento Humano</h6>					
+                  </div>
+                  <button  class="btn aplicar" (click)="open(classic3, 'Notification', '')">
+                    Aplicar                  
+                  </button>                                             
+                  <div>         
+                    <ng-template #classic3 let-c="close" let-d="dismiss">
+                      <div class="modal-content bg-gradient-danger">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="py-3 text-center">
+                            <i class="ni ni-bell-55 ni-3x"></i>
+                            <h4 class="heading mt-4">Ejecutivo comercial</h4>
+                            <p>Serás redireccionado a nuestro portal de empleos, es necesario que te registres para aplicar a esta y muchas más vacantes.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://okempleos.com/vacantes/?vacanteId=1455-ejecutivo-comercial---sistemas-de-gestion" target="_blank">
+                          <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                        </a>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+                <p>
+                  Perfil: Profesional o estudiante de carreras administrativas con experiencia igual o superior a 2 años en el área comercial manejando venta de servicios preferiblemente en certificación SGC (ISO 9001-14001-45001) puede ser una o las tres normas. Responsabilidades: • Realizar telemercadeo para la consecución de citas con clientes nuevos. • Tener conocimientos solidos en Sistemas de Gestión Calidad -SGC • Elaborar protocolos de planificación, control, y mejora • Realizar seguimiento a las cotizaciones generadas • Solicitar los viáticos del servicio a prestar • Elaborar las ofertas comerciales • Realizar seguimiento posventa • Informar al área técnica la aprobación de la orden de servicio por parte del cliente Salario Básico $ 1.500.000 (negociable) +4 % de comisión Contrato: Fijo * 3 meses renovable al año pasa indefinido
+                </p>
+                <h5>Tipo de jornada: Tiempo Completo</h5>
+                <p class="address"><span class="bi bi-geo-alt"></span> Cra. 20B# 77-05 - Chapinero</p>
+                <p class="address"><span class="bi bi-stack"></span>$1.500.000 a $2.500.000</p>
+              </div>
+            </div>
+  
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img class="izquierda" src="./assets/img/theme/logo_vacantess.png" alt="">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="inactiveLink">Administrativa</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Comercial</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Marketing</a>					
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="single.html" class="inactiveLink"><h4>Jefe de ventas SGC</h4></a>
+                    <h6>Gestión Estratégica del Talento Humano</h6>					
+                  </div>
+                  <button  class="btn aplicar" (click)="open(classic4, 'Notification', '')">
+                    Aplicar                  
+                  </button>                                             
+                  <div>         
+                    <ng-template #classic4 let-c="close" let-d="dismiss">
+                      <div class="modal-content bg-gradient-danger">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="py-3 text-center">
+                            <i class="ni ni-bell-55 ni-3x"></i>
+                            <h4 class="heading mt-4">Jefe de ventas SGC</h4>
+                            <p>Serás redireccionado a nuestro portal de empleos, es necesario que te registres para aplicar a esta y muchas más vacantes.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://okempleos.com/vacantes/?vacanteId=1454-jefe-de-ventas-sgc" target="_blank">
+                          <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                        </a>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+                <p>
+                  Perfil: Profesional en carreras Administrativas, 3 años de Experiencia en ventas de servicios en certificación SGC (ISO 9001-14001-45001) puede ser una o las tres normas. de los cuales mínimo 1 año de experiencia dirigiendo equipos de ventas. Responsabilidades: Desarrollo, formación, supervisión y apoyo al equipo de ventas, implementación de las estrategias de ventas desarrolladas por el área de mercadeo, seguimiento a los planes de trabajo asignados por la gerencia comercial y generación de informes de gestión Salario: $ 2500000+ 600.000 fijo no prestacional +1% de comisión Contrato: Fijo * 3 meses renovable al año pasa indefinido
+                </p>
+                <h5>Tipo de jornada: Tiempo Completo</h5>
+                <p class="address"><span class="bi bi-geo-alt"></span> Cra. 20B# 77-05 - Chapinero</p>
+                <p class="address"><span class="bi bi-stack"></span>$2.500.000 a $3.500.000</p>
+              </div>
+            </div>
+  
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img class="izquierda" src="./assets/img/theme/logo_vacantess.png" alt="">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="inactiveLink">Administrativa</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Comercial</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Marketing</a>					
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="single.html" class="inactiveLink"><h4>Ejecutivo comercial volumetria</h4></a>
+                    <h6>Gestión Estratégica del Talento Humano</h6>					
+                  </div>
+                  <button  class="btn aplicar" (click)="open(classic5, 'Notification', '')">
+                    Aplicar                  
+                  </button>                                             
+                  <div>         
+                    <ng-template #classic5 let-c="close" let-d="dismiss">
+                      <div class="modal-content bg-gradient-danger">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="py-3 text-center">
+                            <i class="ni ni-bell-55 ni-3x"></i>
+                            <h4 class="heading mt-4">Ejecutivo comercial volumetria</h4>
+                            <p>Serás redireccionado a nuestro portal de empleos, es necesario que te registres para aplicar a esta y muchas más vacantes.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://okempleos.com/vacantes/?vacanteId=1453-ejecutivo-comercial-volumetria---vidrio" target="_blank">
+                          <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                        </a>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+                <p>
+                  Importante compañía de ingeniería industrial , requiere para su equipo de trabajo ejecutivo comercial Técnico estudiante de mínimo quinto semestre de carreras administrativas, comerciales o asociadas a la ingeniería, Conocimientos en equipos de volumetria de vidrio, en equipos de volumetria metalicos ,pruebas o ensayos de equipos de volumetria de vidrio ,pruebas o ensayos de equipos de volumetria metalicos. Mínimo 2 años de experiencia en ventas preferiblemente de servicios técnicos. Salario: A convenir Horario: Lunes a viernes 7 am a 5:30 pm Contrato: Directo Termino fijo
+                </p>
+                <h5>Tipo de jornada: Tiempo Completo</h5>
+                <p class="address"><span class="bi bi-geo-alt"></span> Cra. 20B# 77-05 - Chapinero</p>
+                <p class="address"><span class="bi bi-stack"></span>$1.500.000 a $2.500.000</p>
+              </div>
+            </div>
+  
+            <div class="single-post d-flex flex-row">
+              <div class="thumb">
+                <img class="izquierda" src="./assets/img/theme/logo_vacantess.png" alt="">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="inactiveLink">Sistemas</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Tecnología</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inactiveLink">Comunicaciones</a>					
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="title d-flex flex-row justify-content-between">
+                  <div class="titles">
+                    <a href="single.html" class="inactiveLink"><h4>Director de proyectos IT</h4></a>
+                    <h6>Gestión Estratégica del Talento Humano</h6>					
+                  </div>
+                  <button  class="btn aplicar" (click)="open(classic6, 'Notification', '')">
+                    Aplicar                  
+                  </button>                                             
+                  <div>         
+                    <ng-template #classic6 let-c="close" let-d="dismiss">
+                      <div class="modal-content bg-gradient-danger">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-notification">Se requiere su atención</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="py-3 text-center">
+                            <i class="ni ni-bell-55 ni-3x"></i>
+                            <h4 class="heading mt-4">Director de proyectos IT</h4>
+                            <p>Serás redireccionado a nuestro portal de empleos, es necesario que te registres para aplicar a esta y muchas más vacantes.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://okempleos.com/vacantes/?vacanteId=1452-director-de-proyectos-it" target="_blank">
+                          <button type="button" class="btn btn-white">¡Ok, Listo!</button>
+                        </a>
+                          <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Cerrar</button>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+                <p>
+                  Nombre del cargo: director de Proyectos Perfil: Profesional con Experiencia igual o superior a 3 años en desarrollo e implementación de proyectos de software, 
+                  Conocimientos y experiencia en metodología tradicional (PMI) deseable conocimiento sobre metodologías  ágiles (Scrum, Kanban, entre otras).
+                  será su responsabilidad dirigir y liderar proyectos de implementación de software de la compañía y realizar apertura de la oficina Salario: 4.000.000
+                  Contrato: Obra labor por duración del proyecto 1 año con opción de quedarse en la compañía Horario lunes a viernes 7 a 530 remoto.
+                </p>
+                <h5>Tipo de jornada: Tiempo Completo</h5>
+                <p class="address"><span class="bi bi-geo-alt"></span> Cra. 20B# 77-05 - Chapinero</p>
+                <p class="address"><span class="bi bi-stack"></span>$3.500.000 a $5.500.000</p>
+              </div>
+            </div>          
+            <a style="border-radius: 4px; font-weight: 600;" class="text-uppercase loadmore-btn mx-auto d-block" href="https://okempleos.com/vacantes/?palabra=&localizacion=null" target="_blank">Ver todas las ofertas</a>
+          </div>
+          <div class="col-lg-4 sidebar">
+            <div class="single-slidebar">
+              <h4>Empleos por ubicación</h4>
+              <ul class="cat-list">
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Bogotá</p><span>846</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Barranquilla</p><span>11</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Medellín</p><span>15</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Ibagué</p><span>5</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Guarne</p><span>4</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Calí</p><span>10</span></a></li>              
+              </ul>
+            </div>		
+            
+            <div class="single-slidebar">
+              <h4>Blog de consejos profesionales</h4>
+              <div class="blog-list">
+                <div class="single-blog " style="filter: brightness(100%); background:#000 url(./assets/img/theme/blog.jpg);">
+                  <a href="single.html" class="inactiveLink"><h4>Construye tu CURRICULUM VITAE<br>
+                  en 3 pasos.</h4></a>
+                  <div class="meta justify-content-between d-flex">
+                    <p>
+                      Próximamente
+                    </p>
+                    <p>
+                      <span class="lnr lnr-heart"></span>
+                      06
+                       <span class="lnr lnr-bubble"></span>
+                      02
+                    </p>
+                  </div>
+                </div>
+                <div class="single-blog " style="background:#000 url(./assets/img/theme/vida.jpg);">
+                  <a href="single.html" class="inactiveLink"><h4>Conviértete en la PROTAGONISTA <br>
+                    de tu vida</h4></a>
+                  <div class="meta justify-content-between d-flex">
+                    <p>
+                      Próximamente
+                    </p>
+                    <p>
+                      <span class="lnr lnr-heart"></span>
+                      05
+                       <span class="lnr lnr-bubble"></span>
+                      04
+                    </p>
+                  </div>
+                </div>
+                <div class="single-blog " style="background:#000 url(./assets/img/theme/pontencia.jpg);">
+                  <a href="single.html" class="inactiveLink"><h4>Cambia y Potencializa tu LinkedIn <br>
+                    DRÁSTICAMENTE</h4></a>
+                  <div class="meta justify-content-between d-flex">
+                    <p>
+                      Próximamente
+                    </p>
+                    <p>
+                      <span class="lnr lnr-heart"></span>
+                      06
+                       <span class="lnr lnr-bubble"></span>
+                      02
+                    </p>
+                  </div>
+                </div>																		
+              </div>
+            </div>		
+  
+            <div class="single-slidebar">
+              <h4>Empleos por áreas</h4>
+              <ul class="cat-list">
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Comercial</p><span>177</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Control Interno</p><span>100</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Tecnología</p><span>102</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Ventas</p><span>81</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Logística</p><span>254</span></a></li>
+                <li><a class="justify-content-between d-flex inactiveLink" href="category.html"><p>Administrativa</p><span>116</span></a></li>              
+              </ul>
+            </div>                    
+          </div>
+        </div>
+      </div>	
+    </section>
+    <!-- End post Area -->
+    			<!-- Start callto-action Area -->
+			<section style="background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);" class="callto-action-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content col-lg-9">
+							<div class="title text-center">
+								<h1 class="mb-10 text-white">Únete a nosotros hoy sin dudarlo</h1>
+								<p class="text-white">Genera ingresos de forma estable trabajando en empresas de prestigio que nos solicitan profesionales con tus habilidades y experiencia. Con Gesth recibirás nuevas propuestas para trabajar cada vez que finalices un contrato.</p>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</section>
+  </main>

@@ -12,28 +12,31 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
-import { LoginComponent } from './login/login.component';
 import { OutsourcingComponent } from './outsourcing/outsourcing.component';
 
 import { ContactoComponent } from './contacto/contacto.component';
 import { EventosComponent } from './eventos/eventos.component';
+import { VacantesComponent } from './vacantes/vacantes.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CapacitacionesComponent } from './capacitaciones/capacitaciones.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
 //bootstrap
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,    
     NavbarComponent,
-    FooterComponent,
-    LoginComponent,
+    FooterComponent,    
     OutsourcingComponent,
     ContactoComponent,
-    EventosComponent
+    EventosComponent,
+    VacantesComponent,
+    PageNotFoundComponent,
+    CapacitacionesComponent    
     ],
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { EventosComponent } from './eventos/eventos.component';
     HomeModule
   ],
   providers: [
-    
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
